@@ -1,0 +1,100 @@
+.flexbox {
+    display: flex;
+    gap: 10pt;
+    padding: 10pt;
+    justify-content: flex-end;
+    align-items: center;
+    height: 2rem;
+}
+.f-item {
+    padding: 11pt 10pt;
+}
+.f-item:hover {
+    background-color: #C8B6A6;
+}
+.name {
+    font-family: 'dancing script';
+    font-size: 2rem;
+    color: white;
+    padding: 10pt;
+}
+.nav-container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    background-color: #8D7B68;
+}
+button {
+    background-color: transparent;
+    border-radius: 3px;
+    border-color: transparent;
+    color: white;
+    font-size: large;
+}
+.container {
+    display: flex;
+}
+.item {
+    width: 50%;
+    height: 97vh;
+}
+.bg-blue {
+    background-color: #A4907C;
+}
+.bg-seagreen {
+    background-color: #F1DEC9;
+}
+.padding-33 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+p#name {
+    font-weight: bold;
+}
+.i-block {
+    display: inline-block;
+}
+.margin-25 {
+    margin-top: 25%;
+    width:70%;
+    margin-left: 30px;
+}
+p.align {
+    text-align: justify;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+.resume {
+    border-radius: 1cm;
+    background-color: #8D7B68;
+    padding: 10px;
+}
+button > a {
+    color: white;
+}
+p > a:hover {
+    color: blue;
+}
+.bg-whitesmoke {
+    background-color: #FEFBE9;
+}
+hr {
+    width: 30%;
+}
+.card {
+    height: 400px;
+    width: 300px;
+    border-radius: 10px;
+}
+.position-r {
+    position: relative;
+    left: 70%;
+    top: 25%;
+}
+img#profile-pic {
+    width: 100px;
+    border-radius: 50%;
+}
