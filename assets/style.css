@@ -1,35 +1,10 @@
 body {
     background-color: black;
 }
-#ts-img {
-    width: 100%;
-    height: 97vh;
-}
-.posi-rele {
-    position: relative;
-}
-.posi-abso {
-    position: absolute;
-    top: 70vh;
-    right: 10vh;
-}
-.disp-flex {
-    display: flex;
-    justify-content: center;
-}
 .butt-1 {
     border-radius: 3px;
     color: white;
     background-color: transparent;
-}
-p#index-p {
-    color: white;
-    padding-bottom: 20px;
-}
-.butt-1:hover {
-    color: black;
-    background-color: white;
-    font-weight: bold;
 }
 .butt-1:active {
     background-color: grey;
@@ -40,4 +15,46 @@ p#index-p {
     padding: 20pt 30pt;
     font-size: large;
     border: 3px solid white;
+}
+p#index-p {
+    color: white;
+    padding-bottom: 20px;
+}
+@media (min-width: 1201px){
+    #ts-img {
+        width: 100%;
+        height: 97vh;
+    }
+    .posi-rele {
+        position: relative;
+    }
+    .posi-abso {
+        position: absolute;
+        top: 70vh;
+        right: 10vh;
+    }
+    .disp-flex {
+        display: flex;
+        justify-content: center;
+    }
+    .butt-1:hover {
+        color: black;
+        background-color: white;
+        font-weight: bold;
+    }
+}
+@media  (max-width:1200px){
+    #ts-img {
+        width: 100%;
+        border-radius: 50%;
+    }
+    p#index-p {
+        text-align: center;
+    }
+    .posi-rele  > div{
+        display: flex;
+        flex-direction: column;
+        height: 98vh;
+        justify-content:space-around;
+    }
 }
