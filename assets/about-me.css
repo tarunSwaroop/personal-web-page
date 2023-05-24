@@ -1,16 +1,19 @@
-div.nav-container, .resume:hover {
+button.resume:hover, div.nav-container {
     background-color: #8D7B68;
 }
-div.name {
-    font-family: 'Great Vibes';
-    font-size: 2rem;
+div.nav-container {
+    height: 2.5rem;
+}
+div.name, div.flexbox {
+    display: inline-block;
 }
 div.flexbox {
     float: right;
 }
-div.name, div.flexbox {
-    display: inline-block;
-    padding: 10px 30px;
+div.name {
+    padding: 5px;
+    font-family: 'dancing script';
+    font-size: 1.5em;
 }
 div.name, .f-item, .resume {
     color: white;
@@ -19,17 +22,30 @@ div.name, .f-item, .resume {
     background-color: transparent;
     border-radius: 5pt;
     border-color: transparent;
-    padding: 10px 30px;
+    padding: 5px 10px;
     font-weight: bold;
+}
+div.container, div.card {
+    display: flex;
+}
+div.card > img {
+    width: 100px;
+    border-radius: 50%;
+}
+div.card {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+    flex-direction: column;
+    height: 400px;
+    width: 300px;
+    background-color: #F1DEC9;
+    border-radius: 5pt;
 }
 .resume {
     border-color: #8D7B68;
     border-radius: 10pt;
-}
-div.container, div.card {
-    display: flex;
-    width: 100%;
-    height: 95vh;
 }
 div.item {
     width: 50%;
@@ -37,13 +53,6 @@ div.item {
 }
 div.item2, button.f-item:hover {
     background-color: #C8B6A6;
-}
-div.content {
-    padding: 20%;
-}
-div.card > img {
-    width: 100px;
-    border-radius: 50%;
 }
 hr {
     width: 30%;
@@ -55,16 +64,54 @@ a {
     color: black;
     text-decoration: none;
 }
-div.card {
-    position: relative;
-    left: 70%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: space-around; 
-    height: 400px;
-    width: 300px;
-    background-color: #F1DEC9;
-    border-radius: 5pt;
-    margin-top: 20%;
+p.align {
+    text-align: justify;
+}
+/* For Laptops and Desktops */
+@media (min-width: 1201px){
+    .f-item, .resume {
+        border-radius: 5pt;
+        padding: 10px 30px;
+    }
+    div.container {
+        width: 100%;
+        height: 95vh;
+    }
+    div.card {
+        left: 70%;
+        margin-top: 20%;
+    }
+    div.content {
+        padding: 20%;
+    }
+}
+/* for mobile phones and tabs */
+@media (max-width: 1200px){
+    .f-item {
+        display: none;
+    }
+    .about-me {
+        margin: 5px;
+        display: inline-block;
+        border-color:#A4907C;
+    }
+    .resume {
+        background-color: #8D7B68;
+    }
+    div.container {
+        flex-direction: column;
+    }
+    div.container, div.item {
+        width: 100%;
+    }
+    div.item {
+        height: 50vh;
+    }
+    div.card {
+        height: 100%;
+        margin: auto;
+    }
+    div.content {
+        padding: 20px;
+    }
 }
