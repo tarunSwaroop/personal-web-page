@@ -107,6 +107,9 @@ p.align {
     div.item {
         height: 50vh;
     }
+    div.item2 {
+        height: fit-content;
+    }
     div.card {
         height: 100%;
         margin: auto;
